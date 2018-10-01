@@ -38,7 +38,7 @@ export default class Thor extends cc.Component {
         }
     }
 
-    bindController() {
+    protected bindController() {
         //关联逻辑控制器
         if (this.useController) {
             let controllerName = this.controllerName || `${this.__classname__}Controller`;

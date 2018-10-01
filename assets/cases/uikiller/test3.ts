@@ -4,6 +4,7 @@ const { ccclass } = cc._decorator;
 @ccclass
 export default class Test3 extends Thor {
 
+    useController = true;
     onLoad() {
         for(let i = 1; i <= this._content.childrenCount; i++) {
             let name = '_image' + i;
