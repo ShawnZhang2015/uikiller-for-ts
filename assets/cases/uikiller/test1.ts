@@ -49,7 +49,7 @@ export default class Test1 extends Thor {
 
     _onImageTouchMove(sender, event) {
         cc.assert(sender === this._image);
-        this._image.position = sender.parent.convertToNodeSpaceAR(event.getLocation());
+        this._image.position = this._image.position.add(event.getDelta());  //sender.parent.convertToNodeSpaceAR(event.getLocation());
     }
 
     _onButtonTouchEnd() {
